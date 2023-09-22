@@ -369,7 +369,7 @@ body{
     top: 50px;
     padding: 10px;
     border-radius: 50%;
-    background-color: #D434FE;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
     z-index: 100;
 }
 .text-box h2{
@@ -612,7 +612,68 @@ footer section{
     line-height: 20px;
 }
 
-
+/* Stars */
+.hero-text{
+    position: relative;
+}
+.hero-text .grey-star{
+    filter: grayscale(100%);
+    position: absolute;
+    opacity: 50%;
+}
+.hero-text .normal-star{
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+    filter: grayscale(50%);
+}
+.img-idea .normal-star{
+    position: absolute;
+    left: 50px;
+    bottom: 50%;
+}
+.idea-text{
+    position: relative;
+}
+.idea-text .normal-star{
+    position: absolute;
+    top: 150px;
+    right: 35%;
+}
+.rules-text{
+    position: relative;
+}
+.rules-text .grey-star{
+    filter: grayscale(100%);
+    position: absolute;
+    /* top: 0%; */
+    right: 35%;
+}
+/* circle */
+.fourth{
+    /* padding-top: 60px; */
+    margin-top: 100px;
+}
+.criteria-img{
+    z-index: 1;
+    /* align-self: center; */
+}
+    .circle{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(270deg, #8F01FE 0%, #FF2674 97.24%);
+        top: -25px;
+        left: 19%;
+        z-index: 0;
+    }
+/* circle */
+.rules-text .grey-star-1{
+    position: absolute;
+    fill: white;
+    filter: grayscale(100%);  
+}
 
 
 
