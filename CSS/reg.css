@@ -140,4 +140,7 @@ select {
     .nav-links.active{
         display: flex;
     }
+    main{
+        flex-direction: column;
+    }
 }
