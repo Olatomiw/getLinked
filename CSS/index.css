@@ -346,9 +346,15 @@ a{
 }
 .faqs section{
     width: 50%;
+    padding: 5%;
 }
 .accordion span{
     color: #D434FE;
+}
+.accordion-img{
+    display: flex;
+    align-items: center;
+
 }
 .accordion-img img{
     max-width: 100%;
@@ -567,21 +573,34 @@ a{
 }
 /* Policy */
 .policy{
-    display: flex;
-    align-items: center;    
+    display: flex; 
+    margin-top: 50px;  
 }
 .policy-text{
     width: 50%;
+    padding: 0 30px;
+    text-align: center;
+}
+.policy-text span{
+    color: #D434FE;
 }
 .policy-text h1{
     text-align: center;
 }
 .policy-img{
-    background-image: url(../img/Vector1.png);
-    background-repeat: no-repeat;
     width: 50%;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.policy-img .padlock{
+    width: 70%;
+    z-index: 1;
+}
+.policy-img .safety{
+    position: absolute;
+    width: 70%;
+    right: 10%;
 }
 .policy-img img{
     width: 100%;
@@ -780,6 +799,9 @@ footer section{
         left: 38%;
         top: 40%;
     }
+    .img-idea{
+        padding: 10%;
+    }
 
     /* Third */
     .third{
@@ -800,6 +822,9 @@ footer section{
         font-weight: 400;
         font-size: 13px;
         line-height: 27px;
+    }
+    .rules-text .grey-star{
+        bottom: 0%;
     }
     /* Fourth */
     .fourth{
@@ -856,6 +881,12 @@ footer section{
         width: 100%;
         margin: 100px 0px;
     }
+    .position{
+        justify-content: space-around;
+    }
+    .position section{
+        max-width: 30%;
+    }
     /* Sponsor */
     .sponsor-logo img{
         max-width: 70%;
@@ -881,5 +912,15 @@ footer section{
         padding: 20px 50px;
     }
     /* Footer */
-    
+     /* Footer */
+     footer{
+        flex-direction: column;
+    }
+    .footer-about{
+        padding-left: 50px;
+    }
+    footer section{
+        width: 100%;
+        padding-left: 50px;
+    }
 }
