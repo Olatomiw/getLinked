@@ -37,10 +37,10 @@ document.getElementById('registration-form').addEventListener('submit', function
     const formData = new FormData(this);
 
     // Replace "{{baseUrl}}" with your actual base URL
-    const baseUrl = '{{baseUrl}}/hackathon/registration'; // Replace with your actual base URL
+    const baseUrl = 'https://backend.getlinked.ai/hackathon/registration'; // Replace with your actual base URL
 
     // Send a POST request to the specified URL
-    fetch(`${baseUrl}/hackathon/registration`, {
+    fetch("https://backend.getlinked.ai/hackathon/registration", {
         method: 'POST',
         body: formData,
     })
