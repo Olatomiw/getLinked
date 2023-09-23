@@ -163,6 +163,12 @@ footer section{
     .nav-links.active{
         display: flex;
     }
+    main{
+        flex-direction: column;
+    }
+    main section{
+        width: 100%;
+    }
     footer{
         flex-direction: column;
     }
