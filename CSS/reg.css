@@ -122,6 +122,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     background: rgba(16, 11, 32, 1);
+    color: #fff;
 }
 footer section{
     color: #fff;
