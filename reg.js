@@ -1,8 +1,8 @@
 function validateForm() {
-    const teamName = document.getElementById('team-name').value;
-    const phone = document.getElementById('phone').value;
+    const teamName = document.getElementById('team_name').value;
+    const phone = document.getElementById('phone_number').value;
     const email = document.getElementById('email').value;
-    const projectName = document.getElementById('project-name').value;
+    const projectName = document.getElementById('project_name').value;
 
     // Regular expressions for validation
     const phoneRegex = /^[0-9]{10}$/;
@@ -35,7 +35,18 @@ document.getElementById('registration-form').addEventListener('submit', function
 
     // Form data
     const formData = new FormData(this);
-    const data = Object.fromEntries(formData)
+    const data = Object.fromEntries(formData);
+
+    // Create a JSON object
+    const jsonData = {
+        email: data.email,
+        phone_number: data.phone_number,
+        team_name: data.team_name,
+        group_size: parseInt(data.group_size), // Parse as an integer if needed
+        project_topic: data.project_topic,
+        category: parseInt(data.category), // Parse as an integer if needed
+        privacy_policy_accepted: data.privacy_policy_accepted === 'on', // Convert to boolean
+    };
 
     // Specify the API URL
     const apiUrl = 'https://backend.getlinked.ai/hackathon/registration';
@@ -44,9 +55,9 @@ document.getElementById('registration-form').addEventListener('submit', function
     fetch(apiUrl, {
         method: 'POST',
         headers: {
-            'Content-Type':   'application/json'
+            'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(jsonData), // Send the JSON data
     })
     .then(response => {
         if (!response.ok) {
