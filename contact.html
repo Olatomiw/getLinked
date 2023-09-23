@@ -4,8 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/contact.css">
 </head>
 <body>
-    
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h3><a href="index.html">getLinked</a></h3>
+                </div>
+                <a href="#" class="toggle-btn">
+                    <img src="./img/Vector.png" alt="">
+                </a>
+                <div class="nav-links">
+                    <ul class="menu">
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    <div class="Reg-btn">
+                        <button><a href="./reg.html" target="_blank">Register</a></button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="text-section">
+                <h1>Get in touch</h1>
+                <p>
+                    Contact
+                    Information
+                </p>
+                    <p>
+                        27,Alara Street
+                        Yaba 100012
+                        Lagos State</p>
+                    <p>Call Us : 07067981819</p>
+                    <p>
+                        we are open from Monday-Friday
+                        08:00am - 05:00pm
+                    </p>
+                    <p>Share on</p>
+            </section>
+            <section class="container">
+                <h2>Questions or Need Assistance?</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="first_name">Name:</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-about">
+                <h1>get<span>Linked</span></h1>
+                <p>
+                    Getlinked Tech Hackathon is a technology innovation program 
+                    established by a group of organizations with the aim of showcasing 
+                    young and talented individuals in the field of technology
+                </p>
+            </section>
+            <section>
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Overview</li>
+                    <li>FAQs</li>
+                    <li>Timeline</li>
+                    <li>Register</li>
+                    <li>Follow Us
+                        <span></span><span></span><span></span>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Contact us</h3>
+                <ul>
+                    <li>+234 6707653444</li>
+                    <li>
+                        27,Alara Street
+                        Yaba 100012
+                        Lagos State
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    <script src="./index.js"></script>
+    <script src="./contact.js"></script>
 </body>
 </html>

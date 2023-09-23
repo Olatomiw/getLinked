@@ -38,6 +38,10 @@ body{
     padding: 1rem;
     display: block;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .nav-links a{
     text-decoration: none;
    color:white ;
@@ -877,14 +881,5 @@ footer section{
         padding: 20px 50px;
     }
     /* Footer */
-    footer{
-        flex-direction: column;
-    }
-    .footer-about{
-        padding-left: 50px;
-    }
-    footer section{
-        width: 100%;
-        padding-left: 50px;
-    }
+    
 }
