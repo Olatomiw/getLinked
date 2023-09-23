@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./CSS/reg.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h3>getLinked</h3>
+            </div>
+            <a href="#" class="toggle-btn">
+                <img src="./img/Vector.png" alt="">
+            </a>
+            <div class="nav-links">
+                <ul class="menu">
+                    <li>Timeline</li>
+                    <li>Overview</li>
+                    <li>FAQs</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="Reg-btn">
+                    <button><a href="./reg.html" target="_blank">Register</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="reg-img">
+            <img src="./img/3d-graphic-designer-showing-thumbs-up-png 1.png" alt="">
+        </div>
+        <div class="container">
+            <h1>Registration Form</h1>
+            <form id="registration-form" onsubmit="return validateForm()">
+                <!-- Row 1 -->
+                <div class="row">
+                    <div class="column">
+                        <label for="team-name">Team Name:</label>
+                        <input type="text" id="team-name" name="team-name" placeholder="Enter the name of your group" required>
+                    </div>
+                    <div class="column">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+    
+                <!-- Row 2 -->
+                <div class="row">
+                    <div class="column">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="column">
+                        <label for="project-name">Project Name:</label>
+                        <input type="text" id="project-name" name="project-name" placeholder="What is your group project topics" required>
+                    </div>
+                </div>
+    
+                <!-- Row 3 -->
+                <div class="row">
+                    <div class="column">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile App Development</option>
+                            <option value="data">Data Science</option>
+                            <option value="ai">Artificial Intelligence</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <label for="team-size">Team Size:</label>
+                        <select id="team-size" name="team-size" required>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <input type="submit" value="Submit" class="submit-button">
+    
+            </form>
+    
+            <div class="terms-and-conditions">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="./reg.js"></script>
+</body>
+</html>

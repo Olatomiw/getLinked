@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+body{
+     background: rgba(21, 14, 40, 1);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    color: white;
+    border-bottom: 1px solid  rgba(128, 128, 128, 0.237) ;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+.nav-links ul li{
+    padding: 1rem;
+    display: block;
+}
+.Reg-btn button{
+    background-image:linear-gradient(rgba(144, 58, 255, 1),rgba(212, 52, 254, 1),rgba(255, 38, 185, 1),rgba(254, 52, 185, 1));
+    border: none;
+    border-radius: 4px;
+    padding: .5rem;
+    margin-left: 2rem;
+}
+.toggle-btn{
+    position: absolute;
+    right: 20px;
+    top: 1.5rem;
+    display: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.reg-img img{
+    width: 80%;
+}
+/* Form */
+.container {
+    padding:100px 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+form{
+    height: fit-content;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.terms-and-conditions {
+    margin-top: 10px;
+}
+
+
+/* end */
+
+
+
+
+
+
+
+@media (max-width:760px){
+    .toggle-btn{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid #FFFFFF2E;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+}

@@ -191,6 +191,9 @@ body{
     background-repeat: no-repeat;
     background-position: right;
 }
+.img-idea .big-idea{
+    width: 100%;
+}
 .idea-text h3{
     font-family: "ClashDisplay-Bold";
     font-weight: 700;
@@ -553,11 +556,18 @@ body{
 .policy-text{
     width: 50%;
 }
+.policy-text h1{
+    text-align: center;
+}
 .policy-img{
     background-image: url(../img/Vector1.png);
     background-repeat: no-repeat;
     width: 50%;
     background-position: center;
+    background-size: cover;
+}
+.policy-img img{
+    width: 100%;
 }
 .policies{
     width: 60%;
@@ -716,6 +726,7 @@ footer section{
     .text-img section{
         width: 100%;
     }
+
     .hero-text{
         text-align: center;
         padding: 0 100px;
@@ -820,7 +831,33 @@ footer section{
     .policy{
         flex-direction: column;
     }
-    .policy section{
+    .policy-text{
         width: 100%;
+    }
+    .policy-img{
+        width: 100%;
+    }
+    .policy-text h1{
+        text-align: center;
+    }
+    .policy-text p{
+        text-align: center;
+    }
+    .policies{
+        width: 80%;
+        padding: 20px 50px;
+        margin: 0 20px;
+        margin-right: 50px;
+    }
+    /* Footer */
+    footer{
+        flex-direction: column;
+    }
+    .footer-about{
+        padding-left: 50px;
+    }
+    footer section{
+        width: 100%;
+        padding-left: 50px;
     }
 }
